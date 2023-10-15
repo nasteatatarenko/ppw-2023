@@ -1,0 +1,40 @@
+.parent{
+    border: 2px solid darkgoldenrod;
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 100px 100px;
+}
+
+.child{
+  border: 1px solid crimson;
+}
+
+.parent-repeat{
+    border: 2px solid darkgoldenrod;
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(2, 50px 90px);   
+}
+
+.parent-fractions{
+    border: 2px solid darkgoldenrod;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 2fr;
+    grid-template-rows: repeat(2, 50px 90px);
+}
+
+.parent-auto{
+    border: 2px solid darkgoldenrod;
+    display: grid;
+    grid-template-columns: 120px auto 120px;
+    grid-template-rows: repeat(2, 90px);
+}
+
+.parent-gap{
+    border: 2px solid darkgoldenrod;
+    display: grid;
+    border: 2px solid darkgoldenrod;
+    display: grid;
+    gap: 10px;
+    row-gap: 20px;
+}

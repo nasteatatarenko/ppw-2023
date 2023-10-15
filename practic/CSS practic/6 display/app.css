@@ -1,0 +1,16 @@
+.block, .inline {
+    border: 2px solid #008b8b;
+    width: 100px;
+}
+
+.inline-block{
+    border: 2px solid #008b8b;
+    width: 100px;
+    display: inline-block;
+}
+
+.none{
+    border: 2px solid #008b8b;
+    width: 100px;
+    display: none;
+}
