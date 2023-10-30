@@ -1,39 +1,37 @@
-body{
-    font-family: Arial, sans-serif;
+body {
     margin: 0;
     padding: 0;
-    display: flex;
 }
-header{
-    display: flex;
-    width: 1500px;
-    height: 557px;
-    padding-top: 19px;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 264px;
-    flex-shrink: 0;
+
+header {
     background-color: #0e0e0e;
-}
-header h1 {
-    
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 57px;
+    width: 100%;
+    margin: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Inknut Antiqua, bold;
 }
 
 nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    width: 722px;
-    height: 31px;
-    flex-direction: row;
-    justify-content: center;
-    flex-shrink: 0;
-    font-size: 20px;
-    font-weight: 500;
+    font-family: Inknut Antiqua, serif;
 }
 
 nav li {
-    margin-left: 30px;
-
+    margin-left: 2rem;
 }
 
 nav a {
@@ -41,12 +39,52 @@ nav a {
     text-decoration: none;
 }
 
-.black{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 557px;
-    background-color: #0e0e0e;
+.container {
+    position: relative;
+    margin: 0 auto;
 }
 
+.container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+    position: relative;
+}
 
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #0e0e0e;
+    z-index: -1;
+}
+.container .text {
+    position: absolute;
+    bottom: 40px;
+    left: 180px;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 0 20px;
+    background: linear-gradient(90deg, rgba(14, 14, 14, 0.50) 32.63%, rgba(14, 14, 14, 0.00) 91.38%);
+}
+
+.container .text h2 {
+    font-family: Irish Grover;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 10px;
+}
+
+.container .text p {
+    font-family: Inria Serif;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 10px;
+}
