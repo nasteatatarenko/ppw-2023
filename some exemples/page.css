@@ -41,6 +41,14 @@ main {
     margin: 0 auto;
     padding: 1rem;
 }
+main div {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 section {
     margin-bottom: 2rem;
@@ -58,10 +66,23 @@ ol {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     nav {
         margin-top: 1rem;
     }
     
+    iframe {
+        flex-direction: column;
+    }
+}
+iframe {
+    
+    margin: 0 auto 60px;
+    width: 30%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
