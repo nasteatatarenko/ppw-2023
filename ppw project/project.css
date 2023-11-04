@@ -2,6 +2,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #e1e5fc;
+    overflow-x: hidden;
+
 }
 .circle {
 position: absolute;
@@ -24,6 +26,7 @@ top: 336px;
     border-radius: 641px;
     background: #0e0e0e;
     opacity: .3;
+    z-index: -1;
 }
 /* Header */
 header {
@@ -192,6 +195,15 @@ nav a:hover::after{
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.who .container h1:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+    color: #B9413E;
+}
+.who .container h1:hover::after{
+    
+    display: block;
+}
 .who .text .description {
     width: 500px;
     height: auto;
@@ -220,12 +232,19 @@ nav a:hover::after{
 }
 /*Image*/
 .imagine{
-    width: 10%;
-    height: 10%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    flex-shrink: 0; 
+    margin: 100px 8% 0 8%;
+}
+.imagine img{
+    width: 23%;
+    height: auto;
     flex-shrink: 0;
-    
+    border-radius: 10px;
+}
+.imagine img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
 }
