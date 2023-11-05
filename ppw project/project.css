@@ -75,9 +75,7 @@ nav a::after{
 }
 nav a:hover{
     color: #B9413E;
-}
-nav a:hover::after{
-    display: block;
+
 }
 
 /* Main img */
@@ -248,4 +246,156 @@ nav a:hover::after{
     transform: scale(1.1);
     transition: 0.5s;
 }
+/*Popular music*/
+.music .popular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    margin: 100px 15% 0 15%;
+}
+.music .popular h1{
+    font-family: Inknut Antiqua;
+    font-family: Inknut Antiqua;
+font-size: 80px;
+font-style: normal;
+font-weight: 400;
+line-height: 116px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.music .popular hr {
+    border: none;
+    height: 2px;
+    background-color: #000;
+    width: 15%;
+    margin-top: 65px;
+}
+.music .popular button{
+    background: var(--0E0E0E, #0E0E0E);
+    height: 50px;
+    color: #fff;
+    border: none;
+    display: flex;
+    flex-shrink: 0;
+    font-family: Inknut Antiqua;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+.music .popular button:hover{
+    background: #B9413E;
+    color: #fff;
+}
+.video{
+    display: flex;
+}
+.video .img1{
+    position: absolute;
+    top: 2100px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.video .img1 img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.video .img2{
+    position: absolute;
+    top: 2000px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
+}
+.video .img2 img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.video .img3{
+    position: absolute;
+    top: 2820px;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.video .img3 img{
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+.video .img4{
+    position: absolute;
+    top: 2550px;
+    left: 850px;
+    display: flex;
+    flex-direction: column;
+}
+.video .img4 img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.video .text{
+    margin:  20px 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.video .text svg{
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    padding: 0;
 
+}
+.video .text svg:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.video .img1 .text{
+    width: 50%;
+    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
+}
+.video .img2 .text{
+    width: 80%;
+    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
+}
+.video .img3 .text{
+    width: 50%;
+    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
+}
+.video .img4 .text{
+    width: 80%;
+    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
+}
+.video .text h1{
+    font-family: Inknut Antiqua;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    margin: 0;
+    padding: 0;
+}
+.video .text p{
+    font-family: Inria Serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
