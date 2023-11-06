@@ -40,6 +40,7 @@ header {
     width: auto;
     margin: 0;
     font-family: Inknut Antiqua;
+
 }
 nav ul {
     list-style: none;
@@ -399,3 +400,77 @@ line-height: 116px;
     margin: 0;
     padding: 0;
 }
+/*Award*/
+.award{
+    background-image: url(img/award.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+    margin: 1300px 0 0 0;
+    padding: 0 0 10px 0;
+}
+.award h1{
+    text-align: left;
+    font-family: Inknut Antiqua;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116px;
+    margin: 100px 0 0 50px;
+    padding: 100px 0 80px 50px ;
+    color: #fff;
+}
+.award .text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 30px;
+    padding: 0;
+    color: #fff;
+    flex-wrap: wrap;
+    flex: 1;
+    
+}
+.award .text h3{
+    font-family: Inknut Antiqua;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    padding: 20px 60px 50px 100px;
+}
+.award .text p{
+    font-family: Inria Serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 100px;
+    padding-bottom: 10px;
+}
+
+ .but{
+    display: block;
+    margin-right: 100px;
+    background-color: #0E0E0E;
+    color: #fff;
+    border: none;
+    height: 50px;
+    width: 200px;
+    flex-shrink: 0;
+    font-family: Inknut Antiqua;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 10px;
+    margin: 0 10px 0px 670px;
+    cursor: pointer;
+ }
+    .but:hover{
+        background: #B9413E;
+        color: #fff;
+    }
