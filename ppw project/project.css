@@ -3,11 +3,10 @@ body {
     padding: 0;
     background-color: #e1e5fc;
     overflow-x: hidden;
-
 }
 .circle {
-position: absolute;
-top: 336px;
+    position: absolute;
+    top: 336px;
     left: -100px;
     width: 641px;
     height: 641px;
@@ -43,7 +42,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 6;
-
 }
 nav ul {
     list-style: none;
@@ -63,7 +61,6 @@ nav a {
     display: flex;
     padding: 0;
     margin-left: 2em;
-    
 }
 nav a::after{
     content: " ";
@@ -79,9 +76,7 @@ nav a::after{
 }
 nav a:hover{
     color: #B9413E;
-
 }
-
 /* Main img */
 .intro {
     position: relative;
@@ -115,7 +110,6 @@ nav a:hover{
     padding: 0 20px;
     background: linear-gradient(90deg, rgba(14, 14, 14, 0.50) 32.63%, rgba(14, 14, 14, 0.00) 91.38%);
     margin: 0 auto;
-    
 }
 .intro .text h2 {
     font-family: Irish Grover, sans-serif;
@@ -203,7 +197,6 @@ nav a:hover{
     color: #B9413E;
 }
 .who .container h1:hover::after{
-    
     display: block;
 }
 .who .text .description {
@@ -259,15 +252,14 @@ nav a:hover{
     flex-wrap: nowrap;
     align-content: flex-start;
     margin: 100px 15% 0 15%;
-    
 }
 .music .popular h1{
     font-family: Inknut Antiqua;
     font-family: Inknut Antiqua;
-font-size: 80px;
-font-style: normal;
-font-weight: 400;
-line-height: 116px;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116px;
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 0;
@@ -434,7 +426,6 @@ line-height: 116px;
     color: #fff;
     flex-wrap: wrap;
     flex: 1;
-    
 }
 .award .text h3{
     font-family: Inknut Antiqua;
@@ -455,7 +446,6 @@ line-height: 116px;
     padding-left: 100px;
     padding-bottom: 10px;
 }
-
  .but{
     display: block;
     margin-right: 100px;
@@ -474,10 +464,10 @@ line-height: 116px;
     margin: 0 10px 0px 670px;
     cursor: pointer;
  }
-    .but:hover{
-        background: #B9413E;
-        color: #fff;
-    }
+ .but:hover{
+     background: #B9413E;
+    color: #fff;
+}
 /*News*/
 .news{
     display: flex;
@@ -498,77 +488,73 @@ line-height: 116px;
     margin-bottom: 20px;
     padding-bottom: 0;
 }
-#slider { /*положение слайдера*/
+#slider { 
     position: relative;
 	text-align: center;
     top: 10px;
 }
 
-#slider{ /*центровка слайдера*/
+#slider{ 
 	margin: 0 auto;
 }
 
-#slides article{ /*все изображения справа друг от доруга*/
+#slides article{ 
 	width: 20%;
 	float: left;
 }
 
-#slides .image{ /*устанавливает общий размер блока с изображениями*/
+#slides .image{ 
 	width: 500%;
 	line-height: 0;
 }
 
-#overflow{ /*сркывает все, что находится за пределами этого блока*/
+#overflow{ 
 	width: 100%;
 	overflow: hidden;
 }
 
-article img{ /*размер изображений слайдера*/
+article img{ 
 	width: 100%;
 }
 
-#desktop:checked ~ #slider{ /*размер всего слайдера*/
-	max-width: 960px; /*максимальнная длинна*/
+#desktop:checked ~ #slider{ 
+	max-width: 960px; 
 }
 
-/*настройка переключения и положения для левой стрелки*/
-/*если свич1-5 активны, то идет обращение к лейблу из блока с id контролс*/
 #switch1:checked ~ #controls label:nth-child(5), 
 #switch2:checked ~ #controls label:nth-child(1),
 #switch3:checked ~ #controls label:nth-child(2),
 #switch4:checked ~ #controls label:nth-child(3),
 #switch5:checked ~ #controls label:nth-child(4){
-	background: url('img/prev.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: left;
-	margin: 0 0 0 -84px; /*сдвиг влево*/
+	background: url('img/prev.png') no-repeat; 
+    float: left;
+	margin: 0 0 0 -84px; 
 	display: block;
 	height: 68px;
 	width: 68px;
 }
 
-/*настройка переключения и положения для правой стрелки*/
 #switch1:checked ~ #controls label:nth-child(2), 
 #switch2:checked ~ #controls label:nth-child(3),
 #switch3:checked ~ #controls label:nth-child(4),
 #switch4:checked ~ #controls label:nth-child(5),
 #switch5:checked ~ #controls label:nth-child(1){
-	background: url('img/next.png') no-repeat; /*заливка фона картинкой без повторений*/
-	float: right;
-	margin: 0 -84px 0 0; /*сдвиг вправо*/
+	background: url('img/next.png') no-repeat; 
+    float: right;
+	margin: 0 -84px 0 0; 
 	display: block;
 	height: 68px;
 	width: 68px;
 }
 
-label, a{ /*при наведении на стрелки или переключатели - курсор изменится*/
+label, a{ 
 	cursor: pointer;
 }
 
-.all input{ /*скрывает стандартные инпуты (чекбоксы) на странице*/
+.all input{ 
 	display: none;
 }
 
-/*позиция изображения при активации переключателя*/
 #switch1:checked ~ #slides .image{
 	margin-left: 0;
 }
@@ -589,32 +575,31 @@ label, a{ /*при наведении на стрелки или переклю�
 	margin-left: -400%;
 }
 
-#controls{ /*положение блока всех управляющих элементов*/
+#controls{ 
 	margin: -25% 0 0 0;
 	width: 100%;
 	height: 50px;
 }
 
-#active label{ /*стиль отдельного переключателя*/
-	border-radius: 10px; /*скругление углов*/
-	display: inline-block; /*расположение в строку*/
+#active label{ 
+	border-radius: 10px; 
+	display: inline-block; 
 	width: 15px;
 	height: 15px;
 	background: #bbb;
 	margin: 0 5px;
 }
 
-#active{ /*расположение блока с переключателями*/
+#active{ 
 	margin: 23% 0 0;
 	text-align: center;
 }
 
-#active label:hover{ /*поведение чекбокса при наведении*/
+#active label:hover{
 	background: #B9413E;
-	border-color: #777 !important; /*выполнение в любом случае*/
+	border-color: #777 !important; 
 }
 
-/*цвет активного лейбла при активации чекбокса*/
 #switch1:checked ~ #active label:nth-child(1),
 #switch2:checked ~ #active label:nth-child(2),
 #switch3:checked ~ #active label:nth-child(3),
@@ -624,14 +609,33 @@ label, a{ /*при наведении на стрелки или переклю�
 	border-color: #18a3dd !important;
 }
 
-#slides .image{ /*анимация пролистывания изображений*/
+#slides .image{ 
 	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 
-#controls label:hover{ /*прозрачность стрелок при наведении*/
+#controls label:hover{ 
 	opacity: 0.6;
 }
 
-#controls label{ /*прозрачность стрелок при отводе курсора*/
+#controls label{ 
 	transition: opacity 0.2s ease-out;
+}
+/*Footer*/
+footer{
+    background-color: #0e0e0e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10%;
+    height: 57px;
+    width: auto;
+    margin-top: 100px;
+    font-family: Inknut Antiqua;
+}
+footer .social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
 }
