@@ -482,7 +482,7 @@ line-height: 116px;
     align-items: center;
     flex-shrink: 0;
     flex-wrap: wrap;
-    margin: 100px 15% 0 15%;
+    margin: 30px 15% 50px 15%;
 }
 .news h1{
     font-family: Inknut Antiqua;
@@ -607,7 +607,7 @@ label, a{ /*при наведении на стрелки или переклю�
 }
 
 #active label:hover{ /*поведение чекбокса при наведении*/
-	background: #76c8ff;
+	background: #B9413E;
 	border-color: #777 !important; /*выполнение в любом случае*/
 }
 
