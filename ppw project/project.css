@@ -40,6 +40,9 @@ header {
     width: auto;
     margin: 0;
     font-family: Inknut Antiqua;
+    position: sticky;
+    top: 0;
+    z-index: 6;
 
 }
 nav ul {
