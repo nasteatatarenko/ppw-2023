@@ -256,6 +256,7 @@ nav a:hover{
     flex-wrap: nowrap;
     align-content: flex-start;
     margin: 100px 15% 0 15%;
+    
 }
 .music .popular h1{
     font-family: Inknut Antiqua;
@@ -475,6 +476,25 @@ line-height: 116px;
         color: #fff;
     }
 /*News*/
+.news{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    margin: 100px 15% 0 15%;
+}
+.news h1{
+    font-family: Inknut Antiqua;
+    font-size: 60px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+}
 #slider { /*положение слайдера*/
     position: relative;
 	text-align: center;
