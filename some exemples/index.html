@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Table</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 200px 150px;
+            grid-template-rows: 50px 100px 150px;
+            gap: 10px; /* Можете настроить зазоры между ячейками по своему усмотрению */
+        }
+
+        .grid-item {
+            border: 1px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Пример задания высоты и ширины для отдельных ячеек */
+        .item1 {
+            grid-row: span 2; /* Ячейка будет занимать 2 строки */
+            grid-column: span 2; /* Ячейка будет занимать 2 колонки */
+        }
+
+        .item2 {
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+
+        .item3 {
+            grid-row: span 3;
+            grid-column: span 1;
+        }
+
+        .item4 {
+            grid-row: span 1;
+            grid-column: span 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item item1">1</div>
+        <div class="grid-item item2">2</div>
+        <div class="grid-item item3">3</div>
+        <div class="grid-item item4">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+    </div>
+</body>
+</html>
