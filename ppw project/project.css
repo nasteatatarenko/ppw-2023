@@ -515,6 +515,7 @@ nav a:hover{
 
 article img{ 
 	width: 100%;
+    filter: blur(5px);
 }
 
 #desktop:checked ~ #slider{ 
@@ -632,10 +633,52 @@ footer{
     width: auto;
     margin-top: 100px;
     font-family: Inknut Antiqua;
+    margin-bottom: 0 !important;
 }
 footer .social{
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 20%;
+}
+footer .mus{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 20%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.mus img{
+    width: 50px;
+    height: 50px;
+    padding: 24px 0 0 50px;
+    margin: 0 !important;
+}
+footer .social :hover{
+    transform: scale(1.1);
+    transition: 0.5s; 
+}
+footer .text{
+    margin: 0;
+    padding: 0;
+}
+footer .text h1{
+    font-family: Inknut Antiqua;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+}
+footer .text p{
+    font-family: Inria Serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    text-wrap: nowrap;
 }
