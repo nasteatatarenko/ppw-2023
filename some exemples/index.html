@@ -7,8 +7,8 @@
     <style>
         .grid-container {
             display: grid;
-            grid-template-columns: 100px 200px 150px;
-            grid-template-rows: 50px 100px 150px;
+            grid-template-columns: 3fr 1fr 3fr;
+            grid-template-rows: 1fr 2fr 4fr 4fr 4fr;
             gap: 10px; /* Можете настроить зазоры между ячейками по своему усмотрению */
         }
 
@@ -21,7 +21,7 @@
         /* Пример задания высоты и ширины для отдельных ячеек */
         .item1 {
             grid-row: span 2; /* Ячейка будет занимать 2 строки */
-            grid-column: span 2; /* Ячейка будет занимать 2 колонки */
+            grid-column: span 1; /* Ячейка будет занимать 2 колонки */
         }
 
         .item2 {
@@ -30,11 +30,27 @@
         }
 
         .item3 {
-            grid-row: span 3;
+            grid-row: span 1;
             grid-column: span 1;
         }
 
         .item4 {
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        .item5{
+            grid-row: span 2;
+            grid-column: span 1;
+        }
+        .item6{
+            grid-row: span 1;
+            grid-column: span 1;
+        }
+        .item7{
+            grid-row: span 2;
+            grid-column: span 1;
+        }
+        .item8{
             grid-row: span 1;
             grid-column: span 2;
         }
@@ -46,11 +62,10 @@
         <div class="grid-item item2">2</div>
         <div class="grid-item item3">3</div>
         <div class="grid-item item4">4</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item">9</div>
+        <div class="grid-item item5">5</div>
+        <div class="grid-item item6">6</div>
+        <div class="grid-item item7">7</div>
+        <div class="grid-item item8">8</div>
     </div>
 </body>
 </html>
