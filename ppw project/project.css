@@ -244,158 +244,142 @@ nav a:hover{
     transition: 0.5s;
 }
 /*Popular music*/
-.music{
-    display: grid;
-    grid-template-columns: 3fr 1fr 3fr;
-    grid-template-rows: 1fr 2fr 4fr 4fr 4fr;
-    width: 100%;
-    margin: 60px 5% 0 10%;
-    padding: 0;
+.video .popular{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    margin: 100px 15% 0 15%;
 }
-.music .popular{
-    display: grid;
-    grid-row: span 2;
-    grid-column: span 1;
+.video .popular h1{
     font-family: Inknut Antiqua;
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
     line-height: 116px;
-    margin: 60px 0 0 0;
-    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-.music .popular h1{
-    margin: 0;
-    padding: 0;
-}
-.music .hrr {
-    grid-row: span 1;
-    grid-column: span 1;
+.video .popular hr {
     border: none;
-    height: 2px;
-    background-color: #000;
     width: 15%;
-    margin: 160px 150px;
-    padding: 0 50px;
-
+    background-color: #000;
+    height: 2px;
+    margin: 65px 100px 0 100px;
+    width: 25%;
+    padding-left: 55%;
 }
-.music .but{
-    display: grid;
-    grid-row: span 1;
-    grid-column: span 1;
-    margin: 0;
-    padding: 0;
-}
-.music button{
+.video .popular button{
     background: var(--0E0E0E, #0E0E0E);
     height: 50px;
     color: #fff;
     border: none;
+    display: flex;
+    flex-shrink: 0;
     font-family: Inknut Antiqua;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: 26px;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 40px;
     cursor: pointer;
-    margin-top: 140px; 
 }
-.music .popular button:hover{
+.video .popular button:hover{
     background: #B9413E;
     color: #fff;
 }
-.music .img1{
-    display: grid;
-    grid-row: span 2;
-    grid-column: span 2;
-    width: auto;
-    height: auto;
+.video{
+    display: flex;
 }
-.music .img1 img{
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+.video .img1{
+    position: absolute;
+    top: 2100px;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
 }
-.music .img2{
-    display: grid;
-    grid-row: span 2;
-    grid-column: span 1;
-    position: relative;
-    width: auto;
-    height: auto;
-}
-.music .img2 img{
-    width: 100%;
+.video .img1 img{
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
-.music .item{
-    grid-row: span 1;
-    grid-column: span 1;
+.video .img2{
+    position: absolute;
+    top: 2000px;
+    left: 650px;
+    display: flex;
+    flex-direction: column;
 }
-.music .img3{
-    display: grid;
-    grid-row: span 2;
-    grid-column: span 1;
-    position: relative;
-    width: auto;
-    height: auto;
-}
-.music .img3 img{
-    width: 100%;
+.video .img2 img{
+    width: 80%;
     height: auto;
     border-radius: 10px;
 }
-.music .img4{
-    display: grid;
-    grid-row: span 1;
-    grid-column: span 2;
-    position: relative;
-    width: auto;
-    height: auto;
+.video .img3{
+    position: absolute;
+    top: 2820px;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
 }
-.music .img4 img{
-    width: 100%;
+.video .img3 img{
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
-
-.music .text{
+.video .img4{
+    position: absolute;
+    top: 2550px;
+    left: 850px;
+    display: flex;
+    flex-direction: column;
+}
+.video .img4 img{
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.video .text{
     margin:  20px 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.music .text svg{
+.video .text svg{
     width: 50px;
     height: 50px;
     margin: 0 10px;
     padding: 0;
 
 }
-.music .text svg:hover{
+.video .text svg:hover{
     transform: scale(1.1);
     transition: 0.5s;
 }
 
-
-.music .img1 .text{
+.video .img1 .text{
     width: 50%;
     background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
 }
-.music .img2 .text{
+.video .img2 .text{
     width: 80%;
     background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
 }
-.music .img3 .text{
+.video .img3 .text{
     width: 50%;
     background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
 }
-.music .img4 .text{
+.video .img4 .text{
     width: 80%;
     background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
 }
-.music .text h1{
+.video .text h1{
     font-family: Inknut Antiqua;
     font-size: 32px;
     font-style: normal;
@@ -404,7 +388,7 @@ nav a:hover{
     margin: 0;
     padding: 0;
 }
-.music .text p{
+.video .text p{
     font-family: Inria Serif;
     font-size: 20px;
     font-style: normal;
