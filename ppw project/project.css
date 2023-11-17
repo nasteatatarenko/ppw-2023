@@ -361,6 +361,7 @@ nav a:hover{
 .video .text svg:hover{
     transform: scale(1.1);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .video .img1 .text{
@@ -682,4 +683,28 @@ footer .text p{
     margin: 0;
     padding: 0;
     text-wrap: nowrap;
+}
+
+/*Group*/
+.stay{
+    display: flex;
+    margin: 5% 15% 50px 15%;
+}
+.stay h1{
+    font-family: Inknut Antiqua;
+    font-size: 60px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;  
+}
+.tt{
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 100%;
+    height: 0;
+    border: 5px solid #B9413E;
 }
