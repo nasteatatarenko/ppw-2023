@@ -604,7 +604,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5% 10%;
+    padding: 180px 5% 270px 10%;
     height: 57px;
     width: auto;
     margin-top: 100px;
@@ -614,8 +614,9 @@ footer{
 footer .social{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 20%;
+    flex-direction: column;
+    width: 10%;
+    padding: 30px 0 0 0;
 }
 footer .mus{
     display: flex;
@@ -625,7 +626,7 @@ footer .mus{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.mus img{
+footer .mus img{
     width: 50px;
     height: 50px;
     padding: 24px 0 0 50px;
@@ -648,32 +649,103 @@ footer .text h1{
     margin: 0;
     padding: 0;
 }
-footer .text p{
+footer .text h5{
     font-family: Inria Serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
     margin: 0;
-    padding: 0;
+    padding: 100px 0 0 0;
     text-wrap: nowrap;
 }
+footer .text p{
+    font-family: Inria Serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 10px 0 0 0;
+}
+footer .text p:hover{
+    color: #B9413E;
+}
+footer .container {
+  width: 100%;
+  padding: 0;
+  margin: 90px auto 0 300px;
+}
+footer .content {
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  background: none;
+  padding: 40px;
+}
+footer .mainc {
+  width: 75%; 
+  margin-left: 75px;
+}
+footer .topic-text {
+  font-size: 23px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 10px;
+    font-family: Inknut Antiqua;
+}
+footer .input-box {
+  height: 50px; 
+  width: 100%; 
+  margin-bottom: 20px;
+}
+footer .input-box input,
+.input-box textarea {
+  height: 100%; 
+  width: 100%; 
+  border: none; 
+  border-radius: 5px; 
+  background: #f0f1f8; 
+  padding: 0 20px; 
+  font-family: Inria Serif;
+}
+footer .input-box textarea {
+  resize:vertical;
+  padding: 20px;
 
+}
+footer .message-box {
+  min-height: 110px;
+}
+footer .button {
+  display: inline-block; 
+    margin-top: 30px;
+}
+footer .button input[type="button"] {
+  color: #fff;
+  font-size: 18px;
+  background: #B9413E;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 7px;
+  transition: 0.2s; 
+    cursor: pointer;
+    font-family: Inknut Antiqua;
+    margin: 0;
+}
+
+footer .button input[type="button"]:hover {
+  background: #0E0E0E;
+}
 /*Group*/
 .stay{
     display: flex;
-    margin: 5% 15% 50px 15%;
+    margin: 50px 15% 50px 10%;
 }
-.stay h1{
-    font-family: Inknut Antiqua;
-    font-size: 60px;
-    text-align: center;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 116px;
-    margin-top: 0;
-    margin-bottom: 10px;
-    padding-bottom: 0;  
+.stay img{
+    width: 300px;
+    height: auto;
 }
 .tt{
     margin: 0 0 0 0;
@@ -682,22 +754,192 @@ footer .text p{
     height: 0;
     border: 5px solid #B9413E;
 }
-
-
-
-/* Кол-во блоков на разных экранах */
-@media only screen and (max-width: 1200px) {
-    .grid {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
+.circle3{
+    position: absolute;
+    top: 0px;
+    left: 79%;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .1;
+    z-index: -1;
 }
-@media only screen and (max-width: 900px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+.straykids{
+    background-color: rgba(185, 65, 62, 0.3);
 }
-@media only screen and (max-width: 600px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
+.stray{
+    
+    padding: 0 8%;
+    margin: 20px ;
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
 }
+.stray img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+.stray .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0 0 0 50px;
+}
+.stray .text h1{
+    font-family: Inknut Antiqua;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e;
+    display: table;
+}
+.stray .text h2{
+    font-family: Inknut Antiqua;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+.stray .text .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px 0;
+}
+.stray .text .col .col1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.stray .text .col h3{
+    font-family: Inria serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+    padding: 2px;
+    color: #0E0E0E;
+}
+.stray .text .slog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.stray .text .slog h5{
+    font-family: Inria serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+.stray .text .slog h3{
+    font-family: Inkunt Antiqua;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.inform {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10%;
+    padding: 0;
+}
+.inform .text{
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 50px;
+}
+.inform .text .col{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 20px 0;
+}
+.inform .text .col .col1{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0 20px 0 0;
+}
+.inform .text .col h4{
+    font-family: Inkunt Antiqua;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+    padding: 2px;
+    color: #0E0E0E;
+}
+.inform .text .col h3{
+    font-family: Inria Serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    margin: 0;
+    padding: 4px 0;
+    color: #0E0E0E;
+}
+.inform .social{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.inform .social .soc{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+
+}
+.inform .social .soc svg{
+    margin: 0 10px;
+    padding: 0;
+}
+.inform .social .soc svg:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.inform .social h1{
+    font-family: Inknut Antiqua;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 116px;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e;
+    display: table;
+}
+
