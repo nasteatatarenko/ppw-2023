@@ -604,7 +604,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 180px 5% 270px 10%;
+    padding: 180px 5% 180px 10%;
     height: 57px;
     width: auto;
     margin-top: 100px;
@@ -656,7 +656,7 @@ footer .text h5{
     font-weight: 400;
     line-height: 30px;
     margin: 0;
-    padding: 100px 0 0 0;
+    padding: 50px 0 0 0;
     text-wrap: nowrap;
 }
 footer .text p{
@@ -674,14 +674,14 @@ footer .text p:hover{
 footer .container {
   width: 100%;
   padding: 0;
-  margin: 90px auto 0 300px;
+  margin: 0 auto 0 300px;
 }
 footer .content {
   display: flex; 
   align-items: center; 
   justify-content: space-between; 
   background: none;
-  padding: 40px;
+  padding: 0 40px;
 }
 footer .mainc {
   width: 75%; 
@@ -715,7 +715,8 @@ footer .input-box textarea {
 
 }
 footer .message-box {
-  min-height: 110px;
+  min-height: 10px;
+  max-height: 30px;
 }
 footer .button {
   display: inline-block; 
@@ -766,6 +767,42 @@ footer .button input[type="button"]:hover {
     opacity: .1;
     z-index: -1;
 }
+.circle4{
+    position: absolute;
+    top: 3050px;
+    left: -200px;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle5{
+    position: absolute;
+    top: 1130px;
+    left: -120px;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle6{
+    position: absolute;
+    top: 2000px;
+    left: 80%;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
 .straykids{
     background-color: rgba(185, 65, 62, 0.3);
 }
@@ -791,7 +828,7 @@ footer .button input[type="button"]:hover {
     margin: 0;
     padding: 0 0 0 50px;
 }
-.stray .text h1{
+.stray .text h1, .inform .social h1, .member .main h1{
     font-family: Inknut Antiqua;
     font-size: 50px;
     font-style: normal;
@@ -928,12 +965,95 @@ footer .button input[type="button"]:hover {
     transition: 0.5s;
     cursor: pointer;
 }
-.inform .social h1{
-    font-family: Inknut Antiqua;
-    font-size: 50px;
+/*Members*/
+.member{
+    margin: 30px 5% 0 5%;
+    background: #fff;
+}
+.member .main{
+    margin: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.member p{
+    font-family: Inria Serif;
+    font-size: 15px;
     font-style: normal;
     font-weight: 400;
-    line-height: 116px;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 20px ;
+}
+.member .image .item{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    padding: 0 10px;
+    border-radius: 10px;
+    border: 2px solid #B9413E;
+}
+.member .image .item h3{
+    font-family: Irish Grover, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 5px 5px 0 5px;
+    color: #0E0E0E;
+}
+.member .image .item p{
+    font-family: Inria Serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 0 5px 5px 5px;
+    color: #0e0e0e;
+}
+.member .image img{
+    width: 250px;
+    height: auto;
+}
+.member .image img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.mem{
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 100px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+}
+.bang, .leeknow, .felix, .hyun{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding: 0;
+}
+.changbin, .han, .seung, .in{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+    padding-top: 100px;
+}
+.mem .text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+.mem .text h1{
+    font-family: Irish Grover, sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
     margin: 0;
     padding: 0;
     background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
@@ -942,4 +1062,41 @@ footer .button input[type="button"]:hover {
     color: #0e0e0e;
     display: table;
 }
-
+.mem .text h3{
+    font-family: Inknut Antiqua;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+.mem .text p{
+    font-family: Inria Serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding-top: 10px;
+}
+.pets{
+    margin: 0;
+    background-color: rgba(185, 65, 62, 0.3);
+}
+.pets h1{
+    font-family: Inknut Antiqua;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    margin: 0;
+    padding: 20px 40%;
+    background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e;
+    display: table;
+    text-align: center;
+}
