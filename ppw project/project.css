@@ -448,6 +448,9 @@ nav a:hover{
     padding-left: 100px;
     padding-bottom: 10px;
 }
+a {
+    text-decoration: none;
+}
  .but{
     display: block;
     margin-right: 100px;
@@ -465,6 +468,7 @@ nav a:hover{
     padding: 10px;
     margin: 0 10px 0px 670px;
     cursor: pointer;
+    text-decoration: none;
  }
  .but:hover{
      background: #B9413E;
@@ -667,9 +671,11 @@ footer .text p{
     line-height: 30px;
     margin: 0;
     padding: 10px 0 0 0;
+    cursor: pointer;
 }
 footer .text p:hover{
     color: #B9413E;
+    transition: 0.5s;
 }
 footer .container {
   width: 100%;
@@ -710,7 +716,7 @@ footer .input-box input,
   font-family: Inria Serif;
 }
 footer .input-box textarea {
-  resize:vertical;
+    resize: none;
   padding: 20px;
 
 }
@@ -724,7 +730,7 @@ footer .button {
 }
 footer .button input[type="button"] {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   background: #B9413E;
   outline: none;
   border: none;
@@ -769,7 +775,7 @@ footer .button input[type="button"]:hover {
 }
 .circle4{
     position: absolute;
-    top: 3050px;
+    top: 2900px;
     left: -200px;
     width: 641px;
     height: 641px;
@@ -969,6 +975,7 @@ footer .button input[type="button"]:hover {
 .member{
     margin: 30px 5% 0 5%;
     background: #fff;
+    padding-bottom: 50px;
 }
 .member .main{
     margin: 0 5%;
@@ -988,10 +995,14 @@ footer .button input[type="button"]:hover {
 .member .image .item{
     display: flex;
     flex-direction: column;
-    margin: 10px 20px;
+    margin: 10px 20px 10px 10px;
     padding: 0 10px;
-    border-radius: 10px;
-    border: 2px solid #B9413E;
+    border-radius: 60px;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    border-image-source: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+
 }
 .member .image .item h3{
     font-family: Irish Grover, sans-serif;
@@ -1081,9 +1092,11 @@ footer .button input[type="button"]:hover {
     margin: 0;
     padding-top: 10px;
 }
+/*Pets*/
 .pets{
     margin: 0;
     background-color: rgba(185, 65, 62, 0.3);
+    padding-bottom: 50px;
 }
 .pets h1{
     font-family: Inknut Antiqua;
@@ -1092,11 +1105,206 @@ footer .button input[type="button"]:hover {
     font-weight: 400;
     line-height: 100px;
     margin: 0;
-    padding: 20px 40%;
+    padding: 20px;
     background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     color: #0e0e0e;
     display: table;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
+.pets .image img{
+    width: 150px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.pets .image:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.pets .main {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 0;
+}
+.pets .main .pet1, .pet2, .pet3, .pet4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.pets .main h3{
+    font-family: Irish Grover, sans-serif;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+.pets .main p{
+    font-family: Inria Serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+/*Login*/
+.login{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(img/image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+  }
+  
+ .login .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+ .login .container {
+    padding: 0 10px;
+    min-height: 100vh;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+  }
+  
+ .login .page {
+    
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+ .login .page .text {
+    margin: 0 90px 0 0;
+  }
+  
+ .login .page .text h1 a{
+    color: #b9413e;
+    font-size: 80px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-family: Irish Grover, sans-serif;
+    text-decoration: none;
+  }
+.login .page .text h1:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    border-bottom: 8px solid #b9413e;
+}
+ .login .page p {
+    font-size: 1.75rem;
+    white-space: nowrap;
+    color: #fff;
+    font-family: Inria Serif;
+  }
+  
+.login  form {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+  }
+.login form input {
+    height: 55px;
+    width: 94%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-family: inria serif;
+    padding: 0 14px;
+}
+.login form input:focus {
+    outline: none;
+    border-color: #b9413e;
+}
+
+.login .link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+.login .link .log {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #b9413e;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+    transition: 0.2s ease;
+    font-family: inknut Antiqua, sans-serif;
+  }
+  
+ .login .link .login:hover {
+    background: #b9413e;
+  }
+  
+ .login form a {
+    text-decoration: none;
+  }
+  
+ .login .link .forgot {
+    color: #b9413e;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    font-family: inria serif;
+  }
+  
+ .login .link .forgot:hover {
+    text-decoration: underline;
+  }
+  .login .image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0;
+  }
+    .login .image .img1{
+        width: 50px;
+        height: auto;
+        margin: 0;
+        padding: 0 5px;
+    }
+    .login .image .img2{
+        width: 60px;
+        height: auto;
+        margin: 0;
+        padding: 15px 0 0 0;
+    }
+    .login .image .bboki {
+        padding-top: 15px;
+        
+    }
+    .login .image .pup {
+        padding-top: 20px;
+        
+    }
+    .login .image h1{
+        padding-top: 20px;
+    }
