@@ -505,7 +505,6 @@ a {
     padding: 20px 10px;
     margin-bottom: 50px;
 }
-
 .grid-item {
     box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
     transition: box-shadow .3s;
@@ -717,8 +716,7 @@ footer .input-box input,
 }
 footer .input-box textarea {
     resize: none;
-  padding: 20px;
-
+    padding: 20px;
 }
 footer .message-box {
   min-height: 10px;
@@ -741,14 +739,13 @@ footer .button input[type="button"] {
     font-family: Inknut Antiqua;
     margin: 0;
 }
-
 footer .button input[type="button"]:hover {
   background: #0E0E0E;
 }
 /*Group*/
 .stay{
     display: flex;
-    margin: 50px 15% 50px 10%;
+    margin: 50px 10% 50px 10%;
 }
 .stay img{
     width: 300px;
@@ -813,7 +810,6 @@ footer .button input[type="button"]:hover {
     background-color: rgba(185, 65, 62, 0.3);
 }
 .stray{
-    
     padding: 0 8%;
     margin: 20px ;
     display: flex;
@@ -960,7 +956,6 @@ footer .button input[type="button"]:hover {
     align-items: center;
     margin: 0;
     padding: 0;
-
 }
 .inform .social .soc svg{
     margin: 0 10px;
@@ -1002,7 +997,6 @@ footer .button input[type="button"]:hover {
     border-image-slice: 1;
     border-width: 2px;
     border-image-source: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
-
 }
 .member .image .item h3{
     font-family: Irish Grover, sans-serif;
@@ -1167,32 +1161,24 @@ footer .button input[type="button"]:hover {
     background-image: url(img/image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    
-
   }
-  
- .login .flex {
+.login .flex {
     display: flex;
     align-items: center;
   }
-  
- .login .container {
+.login .container {
     padding: 0 10px;
     min-height: 100vh;
     justify-content: center;
     backdrop-filter: blur(5px);
   }
-  
- .login .page {
-    
+.login .page {
     max-width: 1000px;
     width: 100%;
   }
-  
  .login .page .text {
     margin: 0 90px 0 0;
   }
-  
  .login .page .text h1 a{
     color: #b9413e;
     font-size: 80px;
@@ -1212,7 +1198,6 @@ footer .button input[type="button"]:hover {
     color: #fff;
     font-family: Inria Serif;
   }
-  
 .login  form {
     display: flex;
     flex-direction: column;
@@ -1237,7 +1222,6 @@ footer .button input[type="button"]:hover {
     outline: none;
     border-color: #b9413e;
 }
-
 .login .link {
     display: flex;
     flex-direction: column;
@@ -1262,11 +1246,9 @@ footer .button input[type="button"]:hover {
  .login .link .login:hover {
     background: #b9413e;
   }
-  
  .login form a {
     text-decoration: none;
   }
-  
  .login .link .forgot {
     color: #b9413e;
     font-size: 20px;
@@ -1274,7 +1256,6 @@ footer .button input[type="button"]:hover {
     text-decoration: none;
     font-family: inria serif;
   }
-  
  .login .link .forgot:hover {
     text-decoration: underline;
   }
@@ -1285,26 +1266,164 @@ footer .button input[type="button"]:hover {
     margin: 20px 0;
     padding: 0;
   }
-    .login .image .img1{
-        width: 50px;
-        height: auto;
-        margin: 0;
-        padding: 0 5px;
-    }
-    .login .image .img2{
-        width: 60px;
-        height: auto;
-        margin: 0;
-        padding: 15px 0 0 0;
-    }
-    .login .image .bboki {
-        padding-top: 15px;
-        
-    }
-    .login .image .pup {
-        padding-top: 20px;
-        
-    }
-    .login .image h1{
-        padding-top: 20px;
-    }
+.login .image .img1{
+    width: 50px;
+    height: auto;
+    margin: 0;
+    padding: 0 5px;
+ }
+.login .image .img2{
+    width: 60px;
+    height: auto;
+    margin: 0;
+    padding: 15px 0 0 0;
+}
+.login .image .bboki {
+    padding-top: 15px;  
+}
+.login .image .pup {
+    padding-top: 20px;    
+}
+.login .image h1{
+    padding-top: 20px;
+}
+/*Discography*/
+.stay iframe{
+    margin:  20px  0 0 300px;
+}
+.about{
+    font-family: Inria serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 50px 10%;
+    background-color: rgba(185, 65, 62, 0.3);
+}
+.discography{
+    margin: 20px 5%;
+    background-image: url(img/fon.jpg);
+    background-repeat: repeat;
+}
+.discography .music .imag img{
+    width: 200px;
+    height: auto;
+    padding-top: 20px;    
+}
+.discography .music{
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+}
+.discography .music .item{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 200px;
+    margin: 0;
+    padding: 0;
+}
+
+.discography .music .album{
+    padding: 0;
+    margin: 0;
+    grid-column: span 2;
+    height: 125px;
+}
+.discography .music .text{
+    padding-left: 20px;
+}
+.mus1{
+    margin-right: 200px;
+}
+.circle7{
+    position: absolute;
+    top: 4700px;
+    left: -120px;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle8{
+    position: absolute;
+    top: 3800px;
+    left: 80%;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle9{
+    position: absolute;
+    top: 6500px;
+    left: -120px;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle10{
+    position: absolute;
+    top: 5600px;
+    left: 80%;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle11{
+    position: absolute;
+    top: 8200px;
+    left: -150px;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.circle12{
+    position: absolute;
+    top: 7400px;
+    left: 80%;
+    width: 641px;
+    height: 641px;
+    flex-shrink: 0;
+    border-radius: 641px;
+    background: #B9413E;
+    opacity: .3;
+    z-index: -1;
+}
+.discography .text h1{
+    font-family: Irish Grover, sans-serif;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px 0 10px 0;
+    margin: 0;
+}
+.discography .text h5{
+    font-family: inria serif;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding: 0;
+}
+.discography .text h3{
+    font-family: Inknut Antiqua;
+    font-size: 18px;
+    line-height: 20px;
+
+}
