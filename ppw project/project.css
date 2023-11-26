@@ -1428,3 +1428,118 @@ footer .button input[type="button"]:hover {
     line-height: 20px;
 
 }
+/*News*/
+.new{
+    margin: 50px 8%;
+
+}
+.web{
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow .3s;
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #FFF;
+}
+.web:hover{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.web .text{
+    margin: 0 50px;
+
+}
+.web h1{
+    font-family: Inknut Antiqua;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    margin: 0;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e;
+    display: table;
+}
+.web h3{
+    font-family: Inria Serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    margin: 0;
+    padding: 0;
+    color: #0E0E0E;
+}
+.new img{
+    width: 560px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.new2, .new4, .new6, .new8{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.new1, .new5, .new7 {
+    display: flex;
+}
+.new1 h4{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    font-family: Irish Grover;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0;
+    padding: 20px 0;
+   
+}
+.new1 h4 a{
+    text-decoration: none;
+    color: #0e0e0e;
+}
+.new1 h4 a:hover{
+    color: #B9413E;
+}
+.new3 img{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.new4 img{
+    height: 200px;
+    width: auto;
+}
+.new5 img, .new6 img{
+    height: 300px;
+    width: auto;
+}
+.new8 h3{
+    font-size: 23px;
+    line-height: 25px;
+}
+.stay .ss{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ss h1{
+    font-family: Inknut Antiqua;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    margin: 0;
+    padding: 20px 0;
+    background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e;
+    display: table;
+}
+.ss img{
+    margin-right: 700px;
+}
