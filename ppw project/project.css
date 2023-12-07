@@ -2,53 +2,40 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    overflow-x: hidden;
+    width: 100%;
+    height: auto;
 }
-.circle {
-    position: absolute;
-    top: 336px;
-    left: -100px;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #0e0e0e;
-    opacity: .3;
-}
-.circle2{
-    position: absolute;
-    top: 1100px;
-    left: 80%;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #0e0e0e;
-    opacity: .3;
-    z-index: -1;
+main{
+    height: auto;
 }
 /* Header */
 header {
-    background-color: #0e0e0e;
     color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 10% 0  10%;
     height: 57px;
-    width: auto;
+    width: 100%;
     margin: 0;
     font-family: Inknut Antiqua;
     position: sticky;
     top: 0;
-    z-index: 6;
+    z-index: 100;
 }
-nav ul {
+header .content{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background-color: #0e0e0e;
+}
+header h1{
+    margin: 0;
+    padding: 0;
+}
+nav  ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: flex-end;
+    
     font-style: normal;
     margin-block: 0;
     font-size: 18px;
@@ -60,7 +47,7 @@ nav a {
     transition: color 0.2s linear;
     display: flex;
     padding: 0;
-    margin-left: 2em;
+    margin: 0 20px;
 }
 nav a::after{
     content: " ";
@@ -79,75 +66,77 @@ nav a:hover{
 }
 /* Main img */
 .intro {
-    position: relative;
-    margin: 0 auto;
-    height: 100vh;    
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    background: url(img/image1.jpg) center no-repeat;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 .intro .item{
-    margin: 0 10%;
-    background-image: url(img/image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 700px;
-}
-.intro::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    backdrop-filter: blur(5px);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
-    height: 70%;
-    background-color: #0e0e0e;
-    z-index: -1;
+
 }
 .intro .text {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
+   flex-direction: column;
     width: auto;
     height: auto;
     color: #fff;
-    padding: 0 20px;
-    margin: 20px;
-}
-.intro .text1{
-    width: 500px;
-    background: linear-gradient(90deg, rgba(14, 14, 14, 0.50) 32.63%, rgba(14, 14, 14, 0.00) 91.38%);
-}
-.intro .item{
-    display: flex;
-    align-items: flex-end;
-   justify-content: space-between;
     padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 880px;
 }
-.intro a{
-    padding-left: 550px;
-}
-.intro .text h2 {
+.intro .text h1 {
     font-family: Irish Grover, sans-serif;
-    font-size: 70px;
+    font-size: 150px;
     font-weight: 500;
-    line-height: 5%;
+    line-height: 1.3;
+    background: linear-gradient(45deg, #0e0e0e 13%, #B9413E 87%, #8AA9D6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0e0e0e;
+    display: table;
+    margin: 0;
 }
 .intro .text p {
-    font-family: Inria Serif;
-    font-size: 40px;
+    font-family: irish grover;
+    font-size: 50px;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 550;
     line-height: 0;
+    color: #0E0E0E;
+    text-wrap: wrap;
+}
+.intro a{
+    padding-top: 20px;
 }
 .intro button {
-    width: 80px;
-    height: 80px;
-    color: #0e0e0e;
+    width: 200px;
+    height: 60px;
+    color: #fff;
     text-align: center;
-    font-family: Inknut Antiqua;
-    font-size: 15px;
+    font-family: irish grover;
+    font-size: 30px;
+    line-height: 1.1;
     font-style: normal;
-    background: #e1e5fc;
-    border-radius: 641px;
-    border: none;
-    cursor: pointer;    
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    cursor: pointer;   
+    margin: 0 auto; 
+    padding: 0;
 }
 .intro button:hover {
     background: #B9413E;
@@ -158,6 +147,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    width: 100%;
 }
 .container h2{
     text-align: center;
@@ -182,16 +172,13 @@ nav a:hover{
     display: flex;
     justify-content: center;
     padding: 0 10%;
-    font-family: Inria Serif;
-    font-size: 20px;
     margin-top: 70px;
-    font-weight: 200;
-    line-height: 30px;
     margin-bottom: 0;
     padding-bottom: 0;
+    flex-wrap: wrap;
 }
 .who .text .welcome{
-    width: 400px;
+    width: 40%;
     flex-shrink: 0;
     margin-top: 30px;
     margin-right: 70px;
@@ -200,19 +187,23 @@ nav a:hover{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.who .container h1:hover{
-    transition: 0.5s;
-    transform: scale(1.1);
-    color: #B9413E;
-}
-.who .container h1:hover::after{
-    display: block;
+.who p{
+    font-family: Inria Serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
 }
 .who .text .description {
-    width: 500px;
+    width: 40%;
     height: auto;
     flex-shrink: 0;
     margin-top: 10px;
+}
+.who a{
+    display: flex;
+    justify-content: flex-end;
 }
 .who button{
     background: var(--0E0E0E, #0E0E0E);
@@ -226,7 +217,6 @@ nav a:hover{
     font-weight: 500;
     line-height: 26px;
     padding: 10px ;
-    margin-left: 270px;
     margin-top: 10px;
     cursor: pointer;
 }
@@ -243,6 +233,7 @@ nav a:hover{
     margin: 100px 8% 0 8%;
 }
 .imagine img{
+    display: flex;
     width: 23%;
     height: auto;
     flex-shrink: 0;
@@ -253,16 +244,21 @@ nav a:hover{
     transition: 0.5s;
 }
 /*Popular music*/
+.video{
+   width: 100%;
+ 
+    padding: 0;
+    
+}
 .video .popular{
     display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
     flex-direction: row;
-    justify-content: space-between;
-    flex-shrink: 0;
-    flex-wrap: nowrap;
-    align-content: flex-start;
     margin: 100px 15% 0 15%;
+    flex-shrink: 0;
 }
-.video .popular h1{
+.video h1{
     font-family: Inknut Antiqua;
     font-size: 80px;
     font-style: normal;
@@ -272,16 +268,16 @@ nav a:hover{
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.video .popular hr {
+.video  hr {
     border: none;
     width: 15%;
     background-color: #000;
     height: 2px;
     margin: 65px 100px 0 100px;
-    width: 25%;
-    padding-left: 55%;
+    
+    padding-left: 0;
 }
-.video .popular button{
+.video  button{
     background: var(--0E0E0E, #0E0E0E);
     height: 50px;
     color: #fff;
@@ -298,98 +294,57 @@ nav a:hover{
     margin-top: 40px;
     cursor: pointer;
 }
-.video .popular button:hover{
+.video  button:hover{
     background: #B9413E;
     color: #fff;
 }
-.video{
+.image{
+    margin: 0 8% ;
     display: flex;
+    justify-content: space-between;
 }
-.video .img1{
-    position: absolute;
-    top: 2100px;
-    left: 10%;
-    display: flex;
-    flex-direction: column;
-}
-.video .img1 img{
-    width: 50%;
+.image  img{
+    margin: 0;
+    padding: 0;
     height: auto;
     border-radius: 10px;
 }
-.video .img2{
-    position: absolute;
-    top: 2000px;
-    left: 650px;
-    display: flex;
-    flex-direction: column;
+.image .image2{
+    margin-left: 0;
+    margin-top: -100px;
 }
-.video .img2 img{
+.image1 img{
     width: 80%;
-    height: auto;
-    border-radius: 10px;
 }
-.video .img3{
-    position: absolute;
-    top: 2820px;
-    left: 5%;
-    display: flex;
-    flex-direction: column;
+.image2 img{
+    width: 100%;
 }
-.video .img3 img{
-    width: 50%;
-    height: auto;
-    border-radius: 10px;
-}
-.video .img4{
-    position: absolute;
-    top: 2550px;
-    left: 850px;
-    display: flex;
-    flex-direction: column;
-}
-.video .img4 img{
-    width: 80%;
-    height: auto;
-    border-radius: 10px;
-}
-.video .text{
+.image .text{
     margin:  20px 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
 }
-.video .text svg{
+.image1 .text{
+    width: 80%;
+}
+.image2 .text{
+    width: 100%;
+}
+.image .text svg{
     width: 50px;
     height: 50px;
     margin: 0 10px;
     padding: 0;
-
 }
-.video .text svg:hover{
+.image .text svg:hover{
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
 }
-
-.video .img1 .text{
-    width: 50%;
-    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
-}
-.video .img2 .text{
-    width: 80%;
-    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
-}
-.video .img3 .text{
-    width: 50%;
-    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
-}
-.video .img4 .text{
-    width: 80%;
-    background: linear-gradient(270deg, rgba(72, 133, 133, 0.69) 16.67%, rgba(72, 133, 133, 0.00) 100%);
-}
-.video .text h1{
+.image .text h1{
     font-family: Inknut Antiqua;
     font-size: 32px;
     font-style: normal;
@@ -398,7 +353,7 @@ nav a:hover{
     margin: 0;
     padding: 0;
 }
-.video .text p{
+.image .text p{
     font-family: Inria Serif;
     font-size: 20px;
     font-style: normal;
@@ -414,8 +369,9 @@ nav a:hover{
     background-repeat: no-repeat;
     width: 100%;
     height: auto;
-    margin: 1300px 0 0 0;
+    margin: 0;
     padding: 0 0 60px 0;
+    
 }
 .award h1{
     text-align: left;
@@ -430,7 +386,7 @@ nav a:hover{
 }
 .award .text{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 30px;
     padding: 0;
@@ -445,7 +401,7 @@ nav a:hover{
     font-weight: 400;
     line-height: 40px;
     margin: 0;
-    padding: 20px 60px 50px 100px;
+    
 }
 .award .text p{
     font-family: Inria Serif;
@@ -456,6 +412,8 @@ nav a:hover{
     margin: 0;
     padding-left: 100px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
 }
 a {
     text-decoration: none;
@@ -475,7 +433,7 @@ a {
     font-weight: 600;
     line-height: 26px;
     padding: 10px;
-    margin: 0 10px 0px 670px;
+    margin: 10px 0;
     cursor: pointer;
     text-decoration: none;
  }
@@ -616,6 +574,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     padding: 180px 5% 180px 10%;
     height: 57px;
     width: auto;
@@ -766,54 +725,6 @@ footer .button input[type="button"]:hover {
     width: 100%;
     height: 0;
     border: 5px solid #B9413E;
-}
-.circle3{
-    position: absolute;
-    top: 0px;
-    left: 79%;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .1;
-    z-index: -1;
-}
-.circle4{
-    position: absolute;
-    top: 2900px;
-    left: -200px;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
-}
-.circle5{
-    position: absolute;
-    top: 1130px;
-    left: -120px;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
-}
-.circle6{
-    position: absolute;
-    top: 2000px;
-    left: 80%;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
 }
 .straykids{
     background-color: rgba(185, 65, 62, 0.3);
@@ -1251,7 +1162,6 @@ footer .button input[type="button"]:hover {
     transition: 0.2s ease;
     font-family: inknut Antiqua, sans-serif;
   }
-  
  .login .link .login:hover {
     background: #b9413e;
   }
@@ -1335,7 +1245,6 @@ footer .button input[type="button"]:hover {
     margin: 0;
     padding: 0;
 }
-
 .discography .music .album{
     padding: 0;
     margin: 0;
@@ -1347,66 +1256,6 @@ footer .button input[type="button"]:hover {
 }
 .mus1{
     margin-right: 200px;
-}
-.circle7{
-    position: absolute;
-    top: 4700px;
-    left: -120px;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
-}
-.circle8{
-    position: absolute;
-    top: 3800px;
-    left: 80%;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
-}
-.circle9{
-    position: absolute;
-    top: 6500px;
-    left: -120px;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
-}
-.circle10{
-    position: absolute;
-    top: 5600px;
-    left: 80%;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
-}
-.circle11{
-    position: absolute;
-    top: 7400px;
-    left: 80%;
-    width: 641px;
-    height: 641px;
-    flex-shrink: 0;
-    border-radius: 641px;
-    background: #B9413E;
-    opacity: .3;
-    z-index: -1;
 }
 .discography .text h1{
     font-family: Irish Grover, sans-serif;
@@ -1543,3 +1392,4 @@ footer .button input[type="button"]:hover {
 .ss img{
     margin-right: 700px;
 }
+/*Adaptation*/
