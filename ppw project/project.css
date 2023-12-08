@@ -298,18 +298,18 @@ justify-content: space-between;
     background: #B9413E;
     color: #fff;
 }
-.image{
+.imagez{
     margin: 0 8% ;
     display: flex;
     justify-content: space-between;
 }
-.image  img{
+.imagez  img{
     margin: 0;
     padding: 0;
     height: auto;
     border-radius: 10px;
 }
-.image .image2{
+.imagez .image2{
     margin-left: 0;
     margin-top: -100px;
 }
@@ -319,7 +319,7 @@ justify-content: space-between;
 .image2 img{
     width: 100%;
 }
-.image .text{
+.imagez .text{
     margin:  20px 0;
     padding: 0;
     display: flex;
@@ -333,18 +333,18 @@ justify-content: space-between;
 .image2 .text{
     width: 100%;
 }
-.image .text svg{
+.imagez .text svg{
     width: 50px;
     height: 50px;
     margin: 0 10px;
     padding: 0;
 }
-.image .text svg:hover{
+.imagez .text svg:hover{
     transform: scale(1.1);
     transition: 0.5s;
     cursor: pointer;
 }
-.image .text h1{
+.imagez .text h1{
     font-family: Inknut Antiqua;
     font-size: 32px;
     font-style: normal;
@@ -353,7 +353,7 @@ justify-content: space-between;
     margin: 0;
     padding: 0;
 }
-.image .text p{
+.imagez .text p{
     font-family: Inria Serif;
     font-size: 20px;
     font-style: normal;
@@ -908,9 +908,12 @@ footer .button input[type="button"]:hover {
     margin: 0;
     padding-top: 20px ;
 }
-.member .image .item{
+.member .image{
     display: flex;
     flex-direction: column;
+}
+.member .image .item{
+    
     margin: 10px 20px 10px 10px;
     padding: 0 10px;
     border-radius: 60px;
@@ -1402,6 +1405,7 @@ footer .button input[type="button"]:hover {
     /*header*/
     header .content{
         font-size: 12px;
+        line-height: 25px;
     } 
     ul{
         flex-wrap: wrap;
@@ -1453,18 +1457,18 @@ footer .button input[type="button"]:hover {
         margin: 0 5%;
     }
     .imagine img{
-        width: 45%;
+       width: 46%;
         margin: 5px;
     }
     .video{
-        width: 100%;
+        width: 90%;
         max-width: 375px;
         margin: 0;
         padding: 0;
         
     }
     .video .popular{
-        margin: 0 5%;
+        margin: 0 2%;
         display: flex;
         flex-direction: column;
     }
@@ -1483,15 +1487,19 @@ footer .button input[type="button"]:hover {
         display: flex;
         justify-content: flex-end;
     }
-    .image{
+    .imagez{
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        margin: 0 2% 0 5%;
     }
-    .image .image1{
-        width: 124%;
+    .imagez .image1{
+        width: 120%;
     }
-    .image .image2{
+    .imagez .image2{
+        width: 95%;
         margin-top: 5px;
+
     }
     /*award*/
     .award{
@@ -1595,8 +1603,16 @@ footer .button input[type="button"]:hover {
    }
    .stray .text h2{
     padding-top: 10px;
+    font-size: 15px;
+    line-height: 18px;
+   }
+   .stray .text .col h3{
     font-size: 18px;
     line-height: 20px;
+   }
+   .stray .text .slog h3{
+    font-size: 23px;
+
    }
    .inform{
     display: flex;
@@ -1609,11 +1625,12 @@ footer .button input[type="button"]:hover {
     padding: 0;
    }
    .inform .text .col h4{
-    font-size: 24px;
+    font-size: 20px;
+    line-height: 27px;
    }
    .inform .social h1{
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 25px;
+    line-height: 30px;
    }
    .member .main{
     display: flex;
@@ -1706,83 +1723,504 @@ footer .button input[type="button"]:hover {
     display: flex;
     flex-direction: column;
     padding: 0;
+    }
+    .new .image{
+        margin: 0;
+    }
+    .new .image img{
+        width: 330px;
+        padding: 5px;
+    } 
+    .new3 img{
+        width: 320px;
+    }
+    .web{
+        padding: 10px 0;
+    }
+    .new5 img, .new6 img{
+        height: 235px;
+    }
+    .new iframe{
+        width: 338px;
+        height: 230px;
+    }
+    .web .text{
+        margin: 0 10px;
+    }
+    .new3 h3{
+        margin: 0 10px;
+    }
+    .new3 h1{
+        margin-left: 10px;
+    }
+    .web h3{
+        font-size: 15px;
+    }
+    .web h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /*login*/
+    .login .page{
+        display: flex;
+        flex-direction: column;
+        margin: 20% 0 0 0 ;
+    }
+    .login .log .image{
+        display: flex;
+        flex-direction: row;
+    }
+    .login .log .image img{
+        display: none;
+    }
+    .login form{
+        padding: 0;
+    }
+    .login .flex{
+        display: flex;
+        align-items: normal;
+    }
+    .login form input{
+        width: 89%;
+        margin: 5px;
+    }
+    .login .link .log{
+        width: 300px;
+        margin-left: 25px;
+    }
+    .login .page .text h1 a{
+        font-size: 50px;
+    }
+    .login .page p{
+        font-size: 20px;
+    }
+    .login .page .text{
+        text-align: center;
+        margin: 0;
+    }
+    .page .link .forgot{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
 }
-.image{
-    margin: 0;
-}
- .new .image img{
-    width: 330px;
-    padding: 5px;
- } 
- .new3 img{
-    width: 320px;
- }
- .web{
-    padding: 10px 0;
- }
- .new5 img, .new6 img{
-    height: 235px;
- }
- .new iframe{
-    width: 338px;
-    height: 230px;
- }
- .web .text{
-    margin: 0 10px;
- }
- .new3 h3{
-    margin: 0 10px;
- }
- .new3 h1{
-    margin-left: 10px;
- }
- .web h3{
-    font-size: 15px;
- }
- .web h1{
+/*adaptation2*/
+@media (max-device-width: 600px) and (min-device-width:376px) {
+    body{
+        width: 100%;
+        max-width: 600px;
+        margin: 0;
+        padding: 0;
+    }
+    /*header*/
+    header .content{
+        font-size: 20px;
+        line-height: 40px;
+    } 
+    ul{
+        flex-wrap: wrap;
+    }   
+    li{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    /*intro*/
+    .intro{
+        height: 500px;
+    }
+    .intro .text p{
     font-size: 20px;
-    line-height: 25px;
- }
- /*login*/
- .login .page{
+    }
+    .intro .text h1{
+        font-size: 90px;
+    }
+    .intro button{
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+    }
+    /*who*/
+    .who .container h2{
+        font-size: 20px;
+    }
+    .who .container h1{
+        font-size: 25px;
+    }
+    .who .text{
+        margin: 2%;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content:space-evenly ;
+    }
+    .who .text .welcome{
+        width: 210px;
+        margin-right: 25px;
+    }
+    .who .text .description{
+        width: 290px;
+        margin-top: 10px;
+        padding: 0;
+    }
+    .imagine{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 5%;
+    }
+    .imagine img{
+       width: 46%;
+        margin: 5px;
+    }
+    .video{
+        width: 90%;
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .video .popular{
+        margin: 0 8%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .video .popular h1{
+        font-size: 50px;
+        margin: 0;
+        line-height: 55px;
+    }
+    .video .popular button{
+        margin: 10px 0;
+    }
+    .video .popular a{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .imagez{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 2% 0 5%;
+    }
+    .imagez .image1{
+        width: 120%;
+    }
+    .imagez .image2{
+        width: 95%;
+        margin-top: 5px;
+
+    }
+    /*award*/
+    .award{
+        height: 350px;
+    }
+    .award h1{
+        font-size: 60px;
+        margin: 0;
+        padding: 0 5%;
+    }
+    .award .text{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .award .text h3, .award .text p{
+        font-size: 25px;
+        width: 90%;
+        line-height: 27px;
+    }
+    .award .text p{
+        padding: 10px 0;
+    }
+    .award .text a{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+    /*news*/
+    .news h1{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2%;
+    }
+    .news .grid-item{
+        width: 550px;
+    }
+   /*footer*/
+   footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0 2% 50px 2%;
+   }
+   footer .mus{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+   }
+   footer .mus img{
+    display: none;
+   }
+   footer h2{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0;
+    padding: 0;
+   }
+   footer .mus .pp{
+    display: none;
+   }
+   footer .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+   }
+   footer .container .mainc{
+    margin: 0;
+    padding: 0;
+    width: 240px;
+   }
+   /*group*/
+   .stray{
+    margin: 0;
+    padding: 0 2%;
     display: flex;
     flex-direction: column;
-    margin: 20% 0 0 0 ;
- }
- .login .log .image{
-    display: flex;
-    flex-direction: row;
- }
- .login .log .image img{
-    display: none;
- }
- .login form{
-    padding: 0;
- }
- .login .flex{
-    display: flex;
-    align-items: normal;
- }
- .login form input{
-    width: 89%;
-    margin: 5px;
- }
- .login .link .log{
-    width: 300px;
-    margin-left: 25px;
- }
- .login .page .text h1 a{
-    font-size: 50px;
- }
- .login .page p{
-    font-size: 20px;
- }
- .login .page .text{
-    text-align: center;
+   }
+   .stray img{
+    width: 560px;
+   }
+   .stray .text{
     margin: 0;
- }
- .page .link .forgot{
+    padding: 0;
+   }
+   .stray .text h1{
+    line-height: 55px;
+   }
+   .stray .text h2{
+    padding-top: 10px;
     font-size: 15px;
-    padding-bottom: 5px;
- }
+    line-height: 18px;
+   }
+   .stray .text .col h3{
+    font-size: 18px;
+    line-height: 20px;
+   }
+   .stray .text .slog h3{
+    font-size: 23px;
+
+   }
+   .inform{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 2%;
+   }
+   .inform .text{
+    margin: 10px 2% 0 2%;
+    padding: 0;
+   }
+   .inform .text .col h4{
+    font-size: 20px;
+    line-height: 27px;
+   }
+   .inform .social h1{
+    font-size: 25px;
+    line-height: 30px;
+   }
+   .member .main{
+    display: flex;
+    flex-direction: column;
+   }
+   .member .main h1{
+    line-height: 60px;
+   }
+   .mem {
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .mem .image{
+    margin: 0;
+    padding: 0;
+   
+   }
+   .bang, .changbin, .leeknow, .han, .felix, .seung, .hyun, .in{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 10px 0;
+    row-gap: 0;
+   }
+   .mem .image{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .mem .image .item{
+    margin: 10px 0 0 0;
+   }
+   .mem .image .item p{
+    padding: 0;
+   }
+   .mem .text{
+    margin: 0;
+    padding: 15px 0 0 0;
+   }
+   .mem .text h1{
+    line-height: 40px;
+   }
+   .mem .text p{
+    margin: 0;
+    padding-top: 5px;
+   }
+   .pets{
+    margin: 0;
+   }
+   .pets h1{
+    line-height: 55px;
+   }
+   .pets .main{
+    display: flex;
+    flex-direction: column;
+   }
+   .pet1, .pet2, .pet3, .pet4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   }
+   .pets .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   /*discography*/
+   .discography .music {
+    display: flex;
+    flex-direction: column;
+   }
+   .discography .music .item{
+    width: 540px;
+    padding: 0;
+   }
+   .discography .music .imag img{
+    width: 210px;
+   }
+   .discography .music .text{
+    margin:  0 0 0 10px;
+    padding: 0;
+   }
+   .discography .text h3{
+    font-size: 14px;
+   }
+   .about{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 5%;
+   }
+   /*news*/
+   .new{
+    margin: 0 5%;
+   }
+   .new1, .new5, .new7, .new2, .new4, .new6, .new8{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+    .new1  h4{
+        text-align: center;
+    }
+    .new .image{
+        margin: 0;
+    }
+    .new .image img{
+        width: 525px;
+        padding: 5px;
+    } 
+    .new3 img{
+        width: 320px;
+    }
+    .web{
+        padding: 10px 0;
+    }
+    .new5 img, .new6 img{
+        height: 325px;
+    }
+    .new iframe{
+        width: 540px;
+        height: 300px;
+    }
+    .web .text{
+        margin: 0 10px;
+    }
+    .new3 h3{
+        margin: 0 10px;
+    }
+    .new3 h1{
+        margin-left: 10px;
+    }
+    .web h3{
+        font-size: 15px;
+    }
+    .web h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /*login*/
+    .login .page{
+        display: flex;
+        flex-direction: column;
+        margin: 20% 0 0 0 ;
+    }
+    .login .log .image{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .login form{
+        padding: 0;
+    }
+    .login .flex{
+        display: flex;
+        align-items: normal;
+    }
+    .login form input{
+        width: 93%;
+        margin: 5px;
+    }
+    .login .link .log{
+        width: 300px;
+        
+    }
+    .login .link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login .page .text h1 a{
+        font-size: 70px;
+    }
+    .login .page p{
+        font-size: 30px;
+    }
+    .login .page .text{
+        text-align: center;
+        margin: 0;
+    }
+    .page .link .forgot{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
 }
