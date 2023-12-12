@@ -1097,8 +1097,9 @@ footer .button input[type="button"]:hover {
     backdrop-filter: blur(5px);
   }
 .login .page {
-    max-width: 1000px;
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
  .login .page .text {
     margin: 0 90px 0 0;
@@ -1444,10 +1445,10 @@ footer .button input[type="button"]:hover {
         flex-direction: column;
     }
     .who .text .welcome{
-        width: 300px;
+        width: 100%;
     }
     .who .text .description{
-        width: 300px;
+        width: 100%;
         margin-top: 10px;
         padding: 0;
     }
@@ -1464,8 +1465,7 @@ footer .button input[type="button"]:hover {
         width: 90%;
         max-width: 375px;
         margin: 0;
-        padding: 0;
-        
+        padding: 0; 
     }
     .video .popular{
         margin: 0 2%;
@@ -1539,7 +1539,10 @@ footer .button input[type="button"]:hover {
         margin: 0 2%;
     }
     .news .grid-item{
-        width: 350px;
+        width: 100%;
+    }
+    .news{
+        margin: 30px 0;
     }
    /*footer*/
    footer{
@@ -1592,7 +1595,7 @@ footer .button input[type="button"]:hover {
     flex-direction: column;
    }
    .stray img{
-    width: 350px;
+    width: 100%;
    }
    .stray .text{
     margin: 0;
@@ -1612,7 +1615,6 @@ footer .button input[type="button"]:hover {
    }
    .stray .text .slog h3{
     font-size: 23px;
-
    }
    .inform{
     display: flex;
@@ -1694,14 +1696,21 @@ footer .button input[type="button"]:hover {
     justify-content: center;
    }
    /*discography*/
+   .discography .music{
+    display: flex;
+    flex-direction: column;
+   }
+   .mus1{
+    margin: 0;
+   }
    .discography .music .item{
     display: flex;
     flex-direction: column;
-    width: 340px;
+    width: 100%;
     padding: 20px 0;
    }
    .discography .music .imag img{
-    width: 340px;
+    width: 100%;
    }
    .discography .music .text{
     margin: 0;
@@ -1728,20 +1737,20 @@ footer .button input[type="button"]:hover {
         margin: 0;
     }
     .new .image img{
-        width: 330px;
+        width: 97%;
         padding: 5px;
     } 
     .new3 img{
-        width: 320px;
+        width: 100%;
     }
     .web{
         padding: 10px 0;
     }
     .new5 img, .new6 img{
-        height: 235px;
+        height: auto;
     }
     .new iframe{
-        width: 338px;
+        width: 100%;
         height: 230px;
     }
     .web .text{
@@ -1770,29 +1779,34 @@ footer .button input[type="button"]:hover {
         display: flex;
         flex-direction: row;
     }
-    .login .log .image img{
-        display: none;
-    }
+    
     .login form{
         padding: 0;
+        width: 100%;
     }
     .login .flex{
         display: flex;
         align-items: normal;
     }
     .login form input{
-        width: 89%;
+        width: 88%;
         margin: 5px;
     }
     .login .link .log{
-        width: 300px;
-        margin-left: 25px;
+        width: 50%;
+    }
+    .login .link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
     .login .page .text h1 a{
-        font-size: 50px;
+        font-size: 70px;
     }
     .login .page p{
-        font-size: 20px;
+        font-size: 30px;
+        white-space: wrap;
     }
     .login .page .text{
         text-align: center;
@@ -1801,6 +1815,9 @@ footer .button input[type="button"]:hover {
     .page .link .forgot{
         font-size: 15px;
         padding-bottom: 5px;
+    }
+    .login .image .img1, .login .image .img2{
+        display: none;
     }
 }
 /*adaptation2*/
@@ -1841,24 +1858,24 @@ footer .button input[type="button"]:hover {
     }
     /*who*/
     .who .container h2{
-        font-size: 20px;
+        font-size: 15px;
     }
     .who .container h1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .who .text{
-        margin: 2%;
+        margin: 5%;
         padding: 0;
         display: flex;
-        flex-wrap: nowrap;
-        justify-content:space-evenly ;
+        flex-direction: column;
+        justify-content: center;
     }
     .who .text .welcome{
-        width: 210px;
-        margin-right: 25px;
+        width: 90%;
+        
     }
     .who .text .description{
-        width: 290px;
+        width: 90%;
         margin-top: 10px;
         padding: 0;
     }
@@ -1881,10 +1898,7 @@ footer .button input[type="button"]:hover {
     .video .popular{
         margin: 0 8%;
         display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
+        
     }
     .video .popular h1{
         font-size: 50px;
@@ -1892,12 +1906,9 @@ footer .button input[type="button"]:hover {
         line-height: 55px;
     }
     .video .popular button{
-        margin: 10px 0;
+        display: none;
     }
-    .video .popular a{
-        display: flex;
-        justify-content: flex-end;
-    }
+   
     .imagez{
         display: flex;
         flex-direction: column;
@@ -1917,7 +1928,7 @@ footer .button input[type="button"]:hover {
         height: 350px;
     }
     .award h1{
-        font-size: 60px;
+        font-size: 50px;
         margin: 0;
         padding: 0 5%;
     }
@@ -1927,9 +1938,9 @@ footer .button input[type="button"]:hover {
         margin: 0 20px;
     }
     .award .text h3, .award .text p{
-        font-size: 25px;
+        font-size: 20px;
         width: 90%;
-        line-height: 27px;
+        line-height: 25px;
     }
     .award .text p{
         padding: 10px 0;
@@ -1940,6 +1951,9 @@ footer .button input[type="button"]:hover {
         margin-right: 10px;
     }
     /*news*/
+    .news{
+        margin: 30px 5%;
+    }
     .news h1{
         font-size: 50px;
         line-height: 55px;
@@ -1950,13 +1964,14 @@ footer .button input[type="button"]:hover {
         margin: 0 2%;
     }
     .news .grid-item{
-        width: 550px;
+        width: 100%;
     }
    /*footer*/
    footer{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     height: 100%;
     padding: 0 2% 50px 2%;
    }
@@ -2000,7 +2015,7 @@ footer .button input[type="button"]:hover {
     flex-direction: column;
    }
    .stray img{
-    width: 560px;
+    width: 100%;
    }
    .stray .text{
     margin: 0;
@@ -2109,13 +2124,14 @@ footer .button input[type="button"]:hover {
    .discography .music {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
    }
    .discography .music .item{
-    width: 540px;
+    width: 100%;
     padding: 0;
    }
    .discography .music .imag img{
-    width: 210px;
+    width: 100%;
    }
    .discography .music .text{
     margin:  0 0 0 10px;
@@ -2123,11 +2139,16 @@ footer .button input[type="button"]:hover {
    }
    .discography .text h3{
     font-size: 14px;
+    line-height: 15px;
+    text-wrap: wrap;
    }
    .about{
     font-size: 15px;
     line-height: 25px;
     padding: 10px 5%;
+   }
+   .mus1{
+    margin: 0;
    }
    /*news*/
    .new{
@@ -2145,20 +2166,20 @@ footer .button input[type="button"]:hover {
         margin: 0;
     }
     .new .image img{
-        width: 525px;
+        width: 97%;
         padding: 5px;
     } 
     .new3 img{
-        width: 320px;
+        width: 100%;
     }
     .web{
         padding: 10px 0;
     }
     .new5 img, .new6 img{
-        height: 325px;
+        height: auto;
     }
     .new iframe{
-        width: 540px;
+        width: 100%;
         height: 300px;
     }
     .web .text{
@@ -2190,17 +2211,18 @@ footer .button input[type="button"]:hover {
     
     .login form{
         padding: 0;
+        width: 100%;
     }
     .login .flex{
         display: flex;
         align-items: normal;
     }
     .login form input{
-        width: 93%;
+        width: 90%;
         margin: 5px;
     }
     .login .link .log{
-        width: 300px;
+        width: 50%;
         
     }
     .login .link{
@@ -2214,6 +2236,7 @@ footer .button input[type="button"]:hover {
     }
     .login .page p{
         font-size: 30px;
+        white-space: wrap;
     }
     .login .page .text{
         text-align: center;
@@ -2223,4 +2246,720 @@ footer .button input[type="button"]:hover {
         font-size: 15px;
         padding-bottom: 5px;
     }
+    .login .image .img1, .login .image .img2{
+        display: none;
+    }
+}
+/*adaptation3*/
+@media (max-device-width: 900px) and (min-device-width:601px) {
+    body{
+        width: 100%;
+        max-width: 900px;
+        margin: 0;
+        padding: 0;
+    }
+    /*header*/
+    header .content{
+        font-size: 20px;
+        line-height: 70px;
+    } 
+    ul{
+        flex-wrap: wrap;
+    }   
+    li{
+        margin: 0;
+        padding: 0;
+        font-size: 15px;
+    }
+    /*intro*/
+    .intro{
+        height: 500px;
+    }
+    .intro .text p{
+    font-size: 20px;
+    }
+    .intro .text h1{
+        font-size: 90px;
+    }
+    .intro button{
+        height: 40px;
+        width: 100px;
+        font-size: 20px;
+    }
+    /*who*/
+    .who .container h2{
+        font-size: 15px;
+    }
+    .who .container h1{
+        font-size: 20px;
+    }
+    .who .text{
+        margin: 5%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .who .text .welcome{
+        width: 100%;
+    }
+    .who .text .description{
+        width: 100%;
+        margin-top: 10px;
+        padding: 0;
+    }
+    .imagine{
+        display: flex;
+        margin: 0 2%;
+    }
+    .imagine img{
+       width: 23%;
+        margin: 5px;
+    }
+    .video{
+        width: 90%;
+        max-width: 375px;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .video .popular{
+        margin: 0 5%;
+        display: flex;
+        justify-content: space-between;
+        width: 150%;
+    }
+    .video .popular h1{
+        font-size: 50px;
+        margin: 0;
+        line-height: 55px;
+    }
+    .video .popular .butt{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+    }
+   
+    .imagez{
+        display: flex;
+        
+        justify-content: center;
+        margin: 0 5%;
+    }
+    .imagez .image1{
+        width: 110%;
+        margin: 0;
+    }
+    .imagez .image2{
+        width: 100%;
+        margin-top: 5px;
+    }
+    .imagez .image1 .static {
+        margin: 0;
+        padding: 0;
+    }
+    /*award*/
+    .award{
+        height: 350px;
+    }
+    .award h1{
+        font-size: 50px;
+        margin: 0;
+        padding: 0 5%;
+    }
+    .award .text{
+        display: flex;
+        flex-direction: column;
+        margin: 0 20px;
+    }
+    .award .text h3, .award .text p{
+        font-size: 20px;
+        width: 90%;
+        line-height: 25px;
+    }
+    .award .text p{
+        padding: 10px 0;
+    }
+    .award .text a{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+    /*news*/
+    .news{
+        margin: 30px 5%;
+    }
+    .news h1{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .grid{
+        display: flex;
+        flex-direction: column;
+        margin: 0 2%;
+    }
+    .news .grid-item{
+        width: 100%;
+    }
+   /*footer*/
+   footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    padding: 0 2% 50px 2%;
+   }
+   footer .mus{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+   }
+   footer .mus img{
+    display: none;
+   }
+   footer h2{
+    font-size: 40px;
+    line-height: 45px;
+    margin: 15px 0;
+    padding: 0;
+   }
+   footer .mus .pp{
+    display: none;
+   }
+   footer .container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+   }
+   footer .container .mainc{
+    margin: 0;
+    padding: 0;
+    width: 240px;
+   }
+   /*group*/
+   .stray{
+    margin: 0;
+    padding: 0 2%;
+    display: flex;
+    
+   }
+   .stray .imgskz{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   .stray img{
+    width: 100%;
+   }
+   .stray .text{
+    margin: 0;
+    padding: 0;
+   }
+   .stray .text h1{
+    line-height: 55px;
+   }
+   .stray .text h2{
+    padding-top: 10px;
+    font-size: 15px;
+    line-height: 18px;
+   }
+   .stray .text .col h3{
+    font-size: 18px;
+    line-height: 20px;
+   }
+   .stray .text .slog h3{
+    font-size: 23px;
+
+   }
+   .inform{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 2%;
+   }
+   .inform .text{
+    margin: 10px 2% 0 2%;
+    padding: 0;
+   }
+   .inform .text .col h4{
+    font-size: 20px;
+    line-height: 27px;
+   }
+   .inform .social h1{
+    font-size: 25px;
+    line-height: 30px;
+   }
+   .member .main{
+    display: flex;
+    flex-direction: column;
+   }
+   .member .main h1{
+    line-height: 60px;
+   }
+   .mem {
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .mem .image{
+    margin: 0;
+    padding: 0;
+   
+   }
+   .bang, .changbin, .leeknow, .han, .felix, .seung, .hyun, .in{
+    display: grid;
+    margin: 0;
+    padding: 10px 0;
+    row-gap: 0;
+   }
+   .mem .image{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .mem .image .item{
+    margin: 10px 20px 0 0;
+   }
+   .mem .image .item p{
+    padding: 0;
+   }
+   .mem .text{
+    margin: 0;
+    padding: 15px 0 0 0;
+   }
+   .mem .text h1{
+    line-height: 40px;
+   }
+   .mem .text p{
+    margin: 0;
+    padding-top: 5px;
+   }
+   .pets{
+    margin: 0;
+   }
+   .pets h1{
+    line-height: 55px;
+   }
+   .pets .main{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    justify-content: space-between;
+   }
+   .pet1, .pet2, .pet3, .pet4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   }
+   .pets .main .pet1, .pet2, .pet3, .pet4 {
+    width: 50%;
+    margin-bottom: 10px;
+   }
+   .pets .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   }
+   /*discography*/
+   .discography .music {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   }
+   .discography .music .item{
+    width: 100%;
+    padding: 0;
+   }
+   .discography .music .imag img{
+    width: 100%;
+   }
+   .discography .music .text{
+    margin:  0 0 0 10px;
+    padding: 0;
+   }
+   .discography .text h3{
+    font-size: 14px;
+    line-height: 15px;
+    text-wrap: wrap;
+   }
+   .about{
+    font-size: 15px;
+    line-height: 25px;
+    padding: 10px 5%;
+   }
+   .mus1{
+    margin: 0;
+   }
+   /*news*/
+   .new{
+    margin: 0 5%;
+   }
+   .new1, .new5, .new7, .new2, .new4, .new6, .new8{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+    .new1  h4{
+        text-align: center;
+    }
+    .new .image{
+        margin: 0;
+    }
+    .new .image img{
+        width: 97%;
+        padding: 5px;
+    } 
+    .new3 img{
+        width: 100%;
+    }
+    .web{
+        padding: 10px 0;
+    }
+    .new5 img, .new6 img{
+        height: auto;
+    }
+    .new iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .web .text{
+        margin: 0 10px;
+    }
+    .new3 h3{
+        margin: 0 10px;
+    }
+    .new3 h1{
+        margin-left: 10px;
+    }
+    .web h3{
+        font-size: 15px;
+    }
+    .web h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /*login*/
+    .login .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .login .log .image{
+        display: flex;
+        flex-direction: row;
+    }
+    .login form{
+        padding: 0;
+        width: 100%;
+    }
+    .login .flex{
+        display: flex;
+        align-items: center;
+    }
+    .login form input{
+        width: 93%;
+        margin: 5px;
+    }
+    .login .link .log{
+        width: 50%;
+    }
+    .login .link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login .page .text h1 a{
+        font-size: 70px;
+    }
+    .login .page p{
+        font-size: 30px;
+        white-space: wrap;
+    }
+    .login .page .text{
+        text-align: center;
+        margin: 0;
+    }
+    .page .link .forgot{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+    
+}
+/*adaptation4*/
+@media (max-device-width: 1200px) and (min-device-width:901px) {
+    body{
+        width: 100%;
+        max-width: 1200px;
+        margin: 0;
+        padding: 0;
+    }
+     .who .text {
+        margin: 0;
+        padding: 0;
+    }
+    .imagine {
+        margin: 50px 2% 0 2%;
+    }
+    .video .popular {
+        margin: 50px 5% 0 5%;
+    }
+    .imagez {
+        margin: 0 5%;
+    }
+    .award h1{
+        line-height: 60px;
+        margin: 30px 0 0 0;
+        padding: 30px 0 50px 30px;
+    }
+    .award .text h3{
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .award .text p{
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 60px;
+    }
+    .news{
+        margin: 10px 2% 0 2%;
+    }
+    .info h2{
+        line-height: 30px;
+    }
+    .stray{
+        padding: 0;
+    }
+    .stray img{
+        width: 100%;
+    }
+    .stray .imgskz{
+        width: 100%;
+    }
+    .inform .text{
+        margin: 10px 2% 0 2%;
+        padding: 0;
+    }
+    .inform .text .col h4{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .inform .social h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .stray .text h1{
+        line-height: 70px;
+    }
+    .stray .text .col{
+        padding: 0;
+    }
+    .stray .text .col h3{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .stray .text .slog h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .stray .text h2{
+        line-height: 30px;
+    }
+    .member .image img{
+        width: 90%;
+    }
+    .changbin, .han, .seung, .in{
+        padding-top: 20px;
+    }
+    .member p{
+        padding: 0 0 0 20px;
+    }
+    .mus1 {
+        margin-right: 80px;
+    }
+    .discography{
+        margin: 20px 2%;
+    }
+    /*news*/
+   .new{
+    margin: 0 5%;
+   }
+    .new7, .new2, .new4 {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    }
+    .new1  h4{
+        text-align: center;
+    }
+    .new .image{
+        margin: 0;
+    }
+    .new1 .image {
+        width: 60%;
+    }
+    .new .image img{
+        width: 97%;
+        padding: 5px;
+    } 
+    .new3 img{
+        width: 100%;
+    }
+    .web{
+        padding: 10px 0;
+    }
+    .new5 img, .new6 img{
+        height: auto;
+    }
+    .new iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .web .text{
+        margin: 0 10px;
+    }
+    .new3 h3{
+        margin: 0 10px;
+    }
+    .new3 h1{
+        margin-left: 10px;
+    }
+    .web h3{
+        font-size: 15px;
+    }
+    .web h1{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /*login*/
+    .login .page{
+        display: flex;
+        flex-direction: column;
+    }
+    .login .log .image{
+        display: flex;
+        flex-direction: row;
+    }
+    .login form{
+        padding: 0;
+        width: 100%;
+    }
+    .login .flex{
+        display: flex;
+        align-items: center;
+    }
+    .login form input{
+        width: 93%;
+        margin: 5px;
+    }
+    .login .link .log{
+        width: 50%;
+    }
+    .login .link{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .login .page .text h1 a{
+        font-size: 70px;
+    }
+    .login .page p{
+        font-size: 30px;
+        white-space: wrap;
+    }
+    .login .page .text{
+        text-align: center;
+        margin: 0;
+    }
+    .page .link .forgot{
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+}
+/*adaptation5*/
+@media (min-device-width:1201px) {
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+     .who .text {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .video .popular {
+        margin: 50px 5% 0 5%;
+    }
+    .imagez {
+        margin: 0 5%;
+    }
+    
+    .news{
+        margin: 10px 2% 0 2%;
+    }
+    .info h2{
+        line-height: 30px;
+    }
+    .stray{
+        padding: 0;
+    }
+    .stray img{
+        width: 100%;
+    }
+    .stray .imgskz{
+        width: 100%;
+    }
+    .inform .text{
+        margin: 10px 2% 0 2%;
+        padding: 0;
+    }
+    .inform .text .col h4{
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .inform .social h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .stray .text h1{
+        line-height: 70px;
+    }
+    .stray .text .col{
+        padding: 0;
+    }
+    .stray .text .col h3{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .stray .text .slog h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .stray .text h2{
+        line-height: 30px;
+    }
+    .member .image img{
+        width: 90%;
+    }
+    .changbin, .han, .seung, .in{
+        padding-top: 20px;
+    }
+    .member p{
+        padding: 0 0 0 20px;
+    }
+    .mus1 {
+        margin-right: 80px;
+    }
+    .discography{
+        margin: 20px 2%;
+    }
+    .new{
+        margin: 0 4%;
+    }
+    
 }
