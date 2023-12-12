@@ -1,0 +1,30 @@
+.btn-outline-success {
+    --bs-btn-color: #b9413a;
+    --bs-btn-border-color: #b9413a;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #b9413a;
+    --bs-btn-hover-border-color: #b9413a;
+    --bs-btn-focus-shadow-rgb: 25,135,84;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #b9413a;
+    --bs-btn-active-border-color: #b9413a;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #b9413a;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #b9413a;
+    --bs-gradient: none;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(14, 14, 14)!important;
+}
+
+.nav-link.disabled, .nav-link:disabled {
+    color: #b9413a;
+}
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    margin: 0 5%;
+}
+.navbar-brand{
+    font-family: Inknut Antiqua;
+}
