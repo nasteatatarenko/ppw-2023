@@ -445,6 +445,7 @@
 #nee .card{
     width: 100%;
 }
+
 @media (max-device-width: 375px){
     #hero h1{
         font-size: 60px;
